@@ -35,7 +35,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="bg-surface font-body text-primary min-h-screen flex flex-col antialiased selection:bg-secondary/30 selection:text-secondary dark">
+      <div className="bg-surface font-body text-primary min-h-screen flex flex-col antialiased selection:bg-[#755b00]/30 selection:text-[#755b00] w-full overflow-x-hidden relative">
         <Navigation />
         <main className="flex-grow w-full relative">
           <AnimatedRoutes />

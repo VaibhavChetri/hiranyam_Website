@@ -2,21 +2,21 @@ export default function Heritage() {
   return (
     <div className="w-full bg-surface">
       {/* Hero Section: Editorial & Asymmetrical */}
-      <section className="relative min-h-[90vh] flex flex-col justify-center px-8 max-w-[1920px] mx-auto pt-32">
-        <div className="grid grid-cols-12 gap-12 items-center">
-          <div className="col-span-12 md:col-span-7 relative z-10 pl-4 md:pl-16">
-            <span className="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-8 block">The Digital Curator</span>
-            <h1 className="font-display italic text-6xl md:text-8xl leading-[1.1] text-primary">
-              A Museum of <br/> <span className="ml-16 md:ml-32">Living Silk</span>
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex flex-col justify-center px-6 md:px-8 max-w-[1920px] mx-auto pt-32 pb-16 md:pb-0 overflow-hidden">
+        <div className="grid grid-cols-12 gap-8 md:gap-12 items-center">
+          <div className="col-span-12 md:col-span-7 relative z-10 pl-0 md:pl-16 mt-8 md:mt-0">
+            <span className="font-label text-[10px] tracking-[0.3em] uppercase text-secondary mb-6 md:mb-8 block">The Digital Curator</span>
+            <h1 className="font-display italic text-5xl md:text-8xl leading-[1.1] text-primary">
+              A Museum of <br/> <span className="ml-8 md:ml-32">Living Silk</span>
             </h1>
-            <p className="font-body text-xl md:text-2xl mt-12 max-w-xl text-primary/80 leading-relaxed border-l border-secondary/30 pl-8 ml-8">
+            <p className="font-body text-lg md:text-2xl mt-8 md:mt-12 max-w-xl text-primary/80 leading-relaxed border-l border-secondary/30 pl-6 md:pl-8 ml-2 md:ml-8">
               Every thread is a silent poem. We reject the standard in favor of true Parisian Couture architectural discipline, married with traditional Indian soul. 
             </p>
           </div>
-          <div className="col-span-12 md:col-span-5 relative mt-16 md:mt-0 right-0 md:-right-8 lg:-right-16">
-            <div className="aspect-[3/4] bg-surface-container-low p-4 ghost-border">
+          <div className="col-span-12 md:col-span-5 relative mt-12 md:mt-0 right-0 md:-right-8 lg:-right-16">
+            <div className="aspect-[4/5] md:aspect-[3/4] bg-surface-container-low p-4 ghost-border">
               <img 
-                className="w-full h-full object-cover filter brightness-95 contrast-125"
+                className="w-full h-full object-cover filter brightness-95 contrast-125 scale-100 hover:scale-[1.03] transition-transform duration-[1500ms]"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPis-pAHDwhJieO1PPRLlvcut-T9FxRJXR2BQJYTpO8xUv6T6r1RsKEAmyKo5jnrXRLUjSIG7FIPmExsnaWjsluBLkcpUgjnyo2MpCuOF55rS5ypwvacd7_H7YqRPOQPgPpBrGXnMUErqPFi2MwEq6fj_05RMVi1jB12dVj1ERo1ru_NKmVWjy3mIcMBgDqoOIlrVbZshbOWN1b6b_pDJ9ICXAhbLxVWHMi3hsRCfkNoY40A2F__4t4ipI5ll1345l6TYjcGpEY2iX" 
                 alt="Weaver at loom" 
               />
@@ -26,13 +26,13 @@ export default function Heritage() {
       </section>
 
       {/* The Story Rail */}
-      <section className="py-32 bg-primary text-on-primary">
-        <div className="px-8 max-w-[1920px] mx-auto mb-24">
-          <h2 className="font-display italic text-5xl md:text-7xl text-[#80bea6]">The Architectural <br/> Restraint</h2>
+      <section className="py-24 md:py-32 bg-primary text-on-primary">
+        <div className="px-6 md:px-8 max-w-[1920px] mx-auto mb-16 md:mb-24">
+          <h2 className="font-display italic text-4xl md:text-7xl text-[#80bea6]">The Architectural <br/> Restraint</h2>
         </div>
         
         {/* Horizontal scroll container (Story Rail) */}
-        <div className="flex overflow-x-auto gap-16 px-8 max-w-[1920px] mx-auto pb-16 no-scrollbar snap-x snap-mandatory">
+        <div className="flex overflow-x-auto gap-8 md:gap-16 px-6 md:px-8 max-w-[1920px] mx-auto pb-16 no-scrollbar snap-x snap-mandatory">
           {[
             {
               title: "Ivory & Emerald",
@@ -50,14 +50,14 @@ export default function Heritage() {
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBO3cENt07oNIosEMwa5GO3sPpjGg_N4EZB5n5ZofeJcVcGdwL01x1hRPaR0BtOA091XiU14ntdwv3aZSrwgVoisx36wMFwjjE2DgFTBgEEfjGVSRnWPKP61kAjxHdgYE8CI49nUdVDsMJSvMFqLmi2T5iGiXz10Cf0ssIivFdDpQ8-aNZ0QIMK09HeCVYgV3b_TZhantDSu9m82Bo1k6IfnnEhwd_W6wXh7AAj7ASIZ-jpGhLNQ4OBni9jYjEcIrND0PM7gsPFN3uu"
             }
           ].map((item, i) => (
-            <div key={i} className="min-w-[85vw] md:min-w-[600px] flex gap-8 items-center bg-primary-container p-8 snap-center ghost-border">
-              <div className="w-1/2 aspect-square">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover rounded-none" />
+            <div key={i} className="min-w-[85vw] md:min-w-[700px] flex flex-col md:flex-row gap-6 md:gap-12 items-center bg-[#002f23] p-6 md:p-12 snap-center ghost-border relative overflow-hidden group">
+              <div className="w-full md:w-1/2 aspect-[4/3] md:aspect-square overflow-hidden">
+                <img src={item.img} alt={item.title} className="w-full h-full object-cover scale-100 group-hover:scale-[1.04] transition-transform duration-[1500ms]" />
               </div>
-              <div className="w-1/2 p-4">
-                <span className="font-label text-[10px] tracking-[0.2em] text-secondary uppercase block mb-4">Chapter 0{i+1}</span>
-                <h3 className="font-headline text-2xl mb-4 text-[#faf9f5]">{item.title}</h3>
-                <p className="font-body text-lg text-[#80bea6] leading-relaxed">{item.desc}</p>
+              <div className="w-full md:w-1/2 p-2 md:p-6 flex flex-col justify-center">
+                <span className="font-label text-[9px] md:text-[10px] tracking-[0.3em] text-[#ffe08f] uppercase block mb-3 md:mb-5">Chapter 0{i+1}</span>
+                <h3 className="font-headline text-3xl md:text-4xl mb-4 md:mb-6 text-[#faf9f5] leading-tight">{item.title}</h3>
+                <p className="font-body text-base md:text-lg text-[#faf9f5]/70 leading-relaxed md:leading-[1.8]">{item.desc}</p>
               </div>
             </div>
           ))}
