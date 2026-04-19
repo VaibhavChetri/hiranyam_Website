@@ -44,10 +44,10 @@ export default function Collection() {
             <section>
               <h3 className="font-headline text-xs tracking-[0.2em] uppercase mb-6 text-primary">Color</h3>
               <div className="grid grid-cols-4 gap-4">
-                <button className="w-6 h-6 bg-[#003527] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Emerald"></button>
-                <button className="w-6 h-6 bg-[#62050b] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Crimson"></button>
-                <button className="w-6 h-6 bg-[#755b00] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Gold"></button>
-                <button className="w-6 h-6 bg-[#faf9f5] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Ivory"></button>
+                <button className="w-6 h-6 bg-[#d29a9e] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Blush Rose"></button>
+                <button className="w-6 h-6 bg-[#3d1f2a] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Regal Plum"></button>
+                <button className="w-6 h-6 bg-[#a8874e] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Antique Gold"></button>
+                <button className="w-6 h-6 bg-[#fbf4f1] border border-primary/20 ring-offset-2 hover:ring-1 ring-secondary transition-all cursor-pointer" title="Rose Ivory"></button>
               </div>
             </section>
             
@@ -71,7 +71,7 @@ export default function Collection() {
                 </div>
                 <span className="absolute top-4 left-4 font-headline text-[9px] tracking-[0.2em] uppercase bg-surface-container-highest/80 backdrop-blur px-3 py-1 text-primary">Heirloom Grade</span>
               </Link>
-              <h2 className="font-display text-2xl font-light mb-1 italic">The Sovereign Emerald</h2>
+              <h2 className="font-display text-2xl font-light mb-1 italic">The Sovereign Rose</h2>
               <div className="flex justify-between items-center">
                 <p className="font-label text-[10px] tracking-[0.2em] uppercase text-primary/50">Kanchipuram Silk</p>
                 <p className="font-body text-lg text-secondary">₹1,85,000</p>

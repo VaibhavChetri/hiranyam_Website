@@ -14,7 +14,7 @@ export default function ProductDetail() {
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe0qJK8GahrkCVhXxcNsB6-bzakHE246Kyz7LDarnp4K2UhXXXyzwbR7I8zrxQfhUbIkIX_ak7VU6BZqAkXJnE1m-Aq5awtsB-DaXbtA01HbAyOUS6mh7FpW2_ZwaCr_CKSeT0_cM1KunlWzH-qrRRNMmAWroc-3ydkqDPATTIYP117ZjjcgqQzijr1AmoXiWbsDq2BGcI1HqbTuyCUXGuY4FnqtmBaE_whDKH-i3niwLEjLkIKvQcQ-SjqFsVHNus9nMM3aMFo05q"
               />
               <div className="absolute bottom-8 left-8">
-                <span className="font-label text-[10px] uppercase tracking-[0.3em] bg-surface/80 backdrop-blur-sm px-4 py-2 text-primary border-l-2 border-crimson-accent" style={{ borderColor: '#8B1A1A' }}>Plate No. 001 — The Weave</span>
+                <span className="font-label text-[10px] uppercase tracking-[0.3em] bg-surface/80 backdrop-blur-sm px-4 py-2 text-primary border-l-2 border-crimson-accent" style={{ borderColor: '#8c3a48' }}>Plate No. 001 — The Weave</span>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-2">
@@ -58,7 +58,7 @@ export default function ProductDetail() {
             </div>
             
             {/* Crimson Thread Divider */}
-            <div className="w-8 h-px bg-crimson-accent mb-12" style={{ backgroundColor: '#8B1A1A' }}></div>
+            <div className="w-8 h-px bg-crimson-accent mb-12" style={{ backgroundColor: '#8c3a48' }}></div>
             
             <p className="font-body text-lg leading-relaxed text-on-surface-variant mb-12">
               A masterpiece of artisanal restraint in <strong>South Indian Silk</strong>. Hand-loomed over 400 hours using pure mulberry silk and 24-karat gold dipped zari, the Zenith represents the absolute pinnacle of our <strong>Pattu heritage</strong> archive.
@@ -155,7 +155,7 @@ export default function ProductDetail() {
                 "To wear a Zenith is to carry the weight of three thousand years of silent dedication."
               </p>
               <div className="mt-4 flex items-center gap-3">
-                <span className="w-1.5 h-1.5 bg-crimson-accent rounded-full" style={{ backgroundColor: '#8B1A1A' }}></span>
+                <span className="w-1.5 h-1.5 bg-crimson-accent rounded-full" style={{ backgroundColor: '#8c3a48' }}></span>
                 <div className="font-label text-[10px] uppercase tracking-[0.2em] text-secondary">
                   — The Curators Note
                 </div>
@@ -174,7 +174,7 @@ export default function ProductDetail() {
               alt="Liquid drape of emerald Pattu silk against a dark wood background" 
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvrMmY1uJqKzEl7fxzeApAqNYyLy517raWyyrzTiWQ7hD7JuhEqL3iQApX5f2D_MSwi8nd_aXT5hHh-Yol8vBdX3HheueP51Vej8LrX34frLtPmnkzxLt_HvLFXQNkHhFhqqCM6mP0Gmr38srP70WzXJvLMOWFEKLnwBJPsTfJyFEB2WqZUGo_VMfLJ3eUIYGDg9bgAmlAnRV4uwhU7YgTXrV4Y56-MMr67gnZCUWpAwYBEaMdfqj-NZC1RlV8CEv6JDwHIkQpc1XC"
             />
-            <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-primary p-8 flex flex-col justify-end hidden lg:flex border-2 border-crimson-accent shadow-2xl">
+            <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-primary p-8 flex flex-col justify-end hidden lg:flex border-2 border-[#8c3a48] shadow-[0_30px_80px_-20px_rgba(61,31,42,0.45)]">
               <span className="font-display text-4xl text-on-primary italic">Authenticity</span>
               <span className="font-label text-[10px] uppercase tracking-widest text-on-primary/60 mt-4">Verified by Hiranyam</span>
             </div>
@@ -184,7 +184,7 @@ export default function ProductDetail() {
               <span className="w-12 h-px bg-crimson-accent/40"></span>
               The Archives
             </span>
-            <h2 className="font-display text-5xl md:text-6xl mb-8 leading-tight">Preserving the <br/><span className="italic text-crimson-accent" style={{ color: '#8B1A1A' }}>Imperial Drape</span></h2>
+            <h2 className="font-display text-5xl md:text-6xl mb-8 leading-tight">Preserving the <br/><span className="italic text-crimson-accent" style={{ color: '#8c3a48' }}>Imperial Drape</span></h2>
             <p className="font-body text-lg text-on-surface-variant leading-loose mb-12">
               Every thread in the Kanchipuram Zenith is tested for tensile strength and metallic purity. We believe that true luxury is defined by the <strong>South Indian Pattu</strong> tradition—not just what you see, but what survives the passage of time. Our heritage pieces are designed to be heirlooms, passing from mother to daughter as living chronicles of family history.
             </p>

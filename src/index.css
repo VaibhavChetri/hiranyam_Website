@@ -1,54 +1,66 @@
 @import "tailwindcss";
 
 @theme {
-  --color-surface-container-low: #f4f4f0;
-  --color-primary-container: #064e3b;
-  --color-surface-bright: #faf9f5;
-  --color-secondary: #755b00;
-  --color-on-secondary-fixed: #241a00;
-  --color-surface-container: #efeeea;
-  --color-tertiary-fixed: #ffdad7;
-  --color-on-primary-fixed: #002117;
-  --color-on-primary-container: #80bea6;
-  --color-on-tertiary-fixed: #410004;
-  --color-surface-variant: #e3e2df;
-  --color-tertiary-fixed-dim: #ffb3ad;
-  --color-inverse-on-surface: #f2f1ed;
+  /* Surfaces — warm rose ivory */
+  --color-background: #fbf4f1;
+  --color-surface: #fbf4f1;
+  --color-surface-bright: #fdf8f6;
+  --color-surface-dim: #e8ddd7;
   --color-surface-container-lowest: #ffffff;
-  --color-surface-tint: #2b6954;
-  --color-on-tertiary: #ffffff;
-  --color-secondary-fixed-dim: #e6c364;
-  --color-on-surface-variant: #404944;
-  --color-secondary-container: #fed977;
-  --color-error-container: #ffdad6;
-  --color-inverse-surface: #2f312e;
-  --color-primary-fixed-dim: #95d3ba;
-  --color-on-secondary-container: #785d00;
-  --color-on-error: #ffffff;
-  --color-surface-container-high: #e9e8e4;
-  --color-on-background: #1b1c1a;
-  --color-on-primary-fixed-variant: #0b513d;
-  --color-surface-dim: #dbdad6;
-  --color-primary-fixed: #b0f0d6;
-  --color-background: #faf9f5;
-  --color-tertiary-container: #821f1f;
-  --color-tertiary: #62050b;
-  --color-on-tertiary-fixed-variant: #852221;
-  --color-primary: #003527;
-  --color-on-error-container: #93000a;
-  --color-surface: #faf9f5;
-  --color-on-secondary: #ffffff;
-  --color-on-surface: #1b1c1a;
-  --color-surface-container-highest: #e3e2df;
-  --color-on-tertiary-container: #ff948c;
-  --color-secondary-fixed: #ffe08f;
-  --color-on-primary: #ffffff;
-  --color-on-secondary-fixed-variant: #584400;
-  --color-inverse-primary: #95d3ba;
-  --color-outline-variant: #bfc9c3;
-  --color-outline: #707974;
-  --color-error: #ba1a1a;
+  --color-surface-container-low: #f7ece7;
+  --color-surface-container: #f2e4dd;
+  --color-surface-container-high: #ecdcd3;
+  --color-surface-container-highest: #e6d4c9;
+  --color-surface-variant: #e8d8d3;
+  --color-inverse-surface: #3a2830;
+  --color-inverse-on-surface: #f7ece7;
+  --color-surface-tint: #6a334a;
 
+  /* Primary — deep regal plum-rose */
+  --color-primary: #3d1f2a;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #5c2d3a;
+  --color-on-primary-container: #d29a9e;
+  --color-primary-fixed: #f4d5d8;
+  --color-primary-fixed-dim: #e8b8bd;
+  --color-on-primary-fixed: #2a0f18;
+  --color-on-primary-fixed-variant: #532838;
+  --color-inverse-primary: #e8b8bd;
+
+  /* Secondary — antique regal gold */
+  --color-secondary: #a8874e;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #f4e3c0;
+  --color-on-secondary-container: #6f5020;
+  --color-secondary-fixed: #f5e2b6;
+  --color-secondary-fixed-dim: #e8c887;
+  --color-on-secondary-fixed: #2a1c00;
+  --color-on-secondary-fixed-variant: #5a4020;
+
+  /* Tertiary — signature rose (#d29a9e) */
+  --color-tertiary: #d29a9e;
+  --color-on-tertiary: #3d1f2a;
+  --color-tertiary-container: #f4dcdd;
+  --color-on-tertiary-container: #5c2a30;
+  --color-tertiary-fixed: #f4dcdd;
+  --color-tertiary-fixed-dim: #e8b8bd;
+  --color-on-tertiary-fixed: #3d1f2a;
+  --color-on-tertiary-fixed-variant: #7a3f45;
+
+  /* Neutrals */
+  --color-on-background: #2a1a1f;
+  --color-on-surface: #2a1a1f;
+  --color-on-surface-variant: #55454c;
+  --color-outline: #8a7680;
+  --color-outline-variant: #d4beb9;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #f9dbd8;
+  --color-on-error-container: #93000a;
+
+  /* Typography */
   --font-headline: "Cinzel", serif;
   --font-display: "Cormorant Garamond", serif;
   --font-body: "EB Garamond", serif;
@@ -58,8 +70,9 @@
   --radius-lg: 0px;
   --radius-xl: 0px;
   --radius-full: 9999px;
-  
+
   --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  --animate-shimmer: shimmer 8s ease-in-out infinite;
 }
 
 @keyframes infinite-scroll {
@@ -67,25 +80,77 @@
   to { transform: translateX(-50%); }
 }
 
+@keyframes shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
 @layer base {
+  html, body {
+    background-color: #fbf4f1;
+  }
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 100, 'GRAD' 0, 'opsz' 24;
   }
 }
 
 @layer utilities {
+  /* Deep plum silk ombré — used for dark regal panels */
   .silk-gradient {
-    background: linear-gradient(135deg, #003527 0%, #064e3b 100%);
+    background: linear-gradient(135deg, #3d1f2a 0%, #5c2d3a 50%, #3d1f2a 100%);
   }
+
+  /* Rose + gold diagonal shimmer — reserved for hero / feature pedestals */
+  .regal-gradient {
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(210, 154, 158, 0.35) 0%, transparent 60%),
+      radial-gradient(900px 500px at 10% 110%, rgba(168, 135, 78, 0.18) 0%, transparent 60%),
+      linear-gradient(135deg, #fdf8f6 0%, #fbf4f1 50%, #f4e3d9 100%);
+  }
+
+  /* Subtle gold-leaf shimmer that slowly drifts */
+  .gold-shimmer {
+    background: linear-gradient(110deg, #a8874e 0%, #e8c887 30%, #f5e2b6 50%, #e8c887 70%, #a8874e 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 8s ease-in-out infinite;
+  }
+
+  /* Antique paper grain — adds a luxe texture over flat surfaces */
+  .paper-grain {
+    background-image:
+      radial-gradient(rgba(61, 31, 42, 0.04) 1px, transparent 1px),
+      radial-gradient(rgba(168, 135, 78, 0.04) 1px, transparent 1px);
+    background-size: 3px 3px, 5px 5px;
+    background-position: 0 0, 1px 2px;
+  }
+
+  /* A rose-tinted hairline border used across cards & dividers */
   .ghost-border {
-    border: 1px solid rgba(112, 121, 116, 0.15);
+    border: 1px solid rgba(61, 31, 42, 0.12);
   }
+
+  /* Gilded hairline — 1px antique gold border for premium accents */
+  .gild-border {
+    border: 1px solid rgba(168, 135, 78, 0.35);
+  }
+
+  /* Thin gold underline accent */
+  .gold-underline {
+    background-image: linear-gradient(90deg, transparent 0%, #a8874e 20%, #e8c887 50%, #a8874e 80%, transparent 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: bottom left;
+  }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
-  
+
   ::selection {
-    background: var(--color-secondary);
-    color: #ffffff;
+    background: #d29a9e;
+    color: #3d1f2a;
   }
 }

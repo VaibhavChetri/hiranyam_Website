@@ -71,7 +71,7 @@ export default function ZenithDetail() {
             {/* Details Accordions */}
             <div className="space-y-0">
               {/* Accordion 1 */}
-              <div className="border-t py-6 border-[#8B1A1A]/30">
+              <div className="border-t py-6 border-[#8c3a48]/30">
                 <details className="group" open>
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline text-sm tracking-widest uppercase text-secondary">The Thread</h3>
@@ -95,7 +95,7 @@ export default function ZenithDetail() {
               </div>
 
               {/* Accordion 2 */}
-              <div className="border-t py-6 border-[#8B1A1A]/30">
+              <div className="border-t py-6 border-[#8c3a48]/30">
                 <details className="group">
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline text-sm tracking-widest uppercase text-secondary">The Weave</h3>
@@ -119,7 +119,7 @@ export default function ZenithDetail() {
               </div>
 
               {/* Accordion 3 */}
-              <div className="border-t border-b py-6 border-[#8B1A1A]/30">
+              <div className="border-t border-b py-6 border-[#8c3a48]/30">
                 <details className="group">
                   <summary className="flex justify-between items-center cursor-pointer list-none">
                     <h3 className="font-headline text-sm tracking-widest uppercase text-secondary">The Heritage</h3>
@@ -144,7 +144,7 @@ export default function ZenithDetail() {
             </div>
 
             {/* Editorial Sidebar Quote */}
-            <div className="mt-16 pt-16 border-t border-[#8B1A1A]/20">
+            <div className="mt-16 pt-16 border-t border-[#8c3a48]/20">
               <p className="font-display italic text-2xl text-primary/40 leading-relaxed">
                 "To wear a Zenith is to carry the weight of three thousand years of silent dedication."
               </p>
@@ -176,7 +176,7 @@ export default function ZenithDetail() {
             <p className="font-body text-lg text-on-surface-variant leading-loose mb-12">
               Every thread in the Kanchipuram Zenith is tested for tensile strength and metallic purity. We believe that luxury is not just what you see, but what survives the passage of time. Our heritage pieces are designed to be heirlooms, passing from mother to daughter as living chronicles of family history.
             </p>
-            <Link to="/collection" className="inline-flex items-center gap-4 font-headline text-sm tracking-[0.2em] uppercase border-b border-primary pb-2 transition-all hover:text-[#8B1A1A] hover:border-[#8B1A1A]">
+            <Link to="/collection" className="inline-flex items-center gap-4 font-headline text-sm tracking-[0.2em] uppercase border-b border-primary pb-2 transition-all hover:text-[#8c3a48] hover:border-[#8c3a48]">
               Discover the Archive
               <span className="material-symbols-outlined">arrow_right_alt</span>
             </Link>
