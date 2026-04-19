@@ -9,7 +9,7 @@ export default function Footer() {
       {/* Soft rose glow */}
       <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-20 blur-3xl" style={{ background: 'radial-gradient(circle, #d29a9e 0%, transparent 70%)' }}></div>
 
-      <img src="/logo.png" alt="Hiranyam lotus" className="relative z-10 h-20 w-auto mb-5 drop-shadow-[0_6px_25px_rgba(210,154,158,0.45)]" />
+      <img src="/logo.png" alt="Hiranyam lotus" className="relative z-10 h-32 md:h-48 w-auto mb-8 drop-shadow-[0_10px_35px_rgba(210,154,158,0.6)] transition-transform duration-700 hover:scale-105" />
       <div className="relative z-10 font-['Cinzel'] text-3xl tracking-[0.35em] mb-4">
         <span className="gold-shimmer">HIRAṆYAM</span>
       </div>
