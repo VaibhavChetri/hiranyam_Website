@@ -12,7 +12,7 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-8 items-center h-full max-w-screen-2xl mx-auto w-full">
           <div className="col-span-12 md:col-span-7 z-10">
             <div className="flex items-center gap-5 mb-8">
-              <img src="/logo.jpeg" alt="Hiranyam lotus" className="h-20 md:h-24 w-auto drop-shadow-[0_10px_30px_rgba(210,154,158,0.3)]" />
+              <img src="/logo.png" alt="Hiranyam lotus" className="h-20 md:h-24 w-auto drop-shadow-[0_10px_30px_rgba(210,154,158,0.3)]" />
               <div className="flex flex-col">
                 <span className="font-label text-[10px] tracking-[0.45em] uppercase text-secondary">Est. MCMXCII</span>
                 <span className="font-display italic text-lg text-primary/70">House of Heirloom Silks</span>

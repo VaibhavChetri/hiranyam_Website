@@ -9,9 +9,9 @@ export default function Footer() {
       {/* Soft rose glow */}
       <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full opacity-20 blur-3xl" style={{ background: 'radial-gradient(circle, #d29a9e 0%, transparent 70%)' }}></div>
 
-      <img src="/logo.jpeg" alt="Hiranyam lotus" className="relative z-10 h-20 w-auto mb-5 drop-shadow-[0_6px_25px_rgba(210,154,158,0.45)]" />
+      <img src="/logo.png" alt="Hiranyam lotus" className="relative z-10 h-20 w-auto mb-5 drop-shadow-[0_6px_25px_rgba(210,154,158,0.45)]" />
       <div className="relative z-10 font-['Cinzel'] text-3xl tracking-[0.35em] mb-4">
-        <span className="gold-shimmer">HIRANYAM</span>
+        <span className="gold-shimmer">HIRAṆYAM</span>
       </div>
       <div className="relative z-10 font-display italic text-sm text-[#fbf4f1]/60 tracking-[0.2em] mb-12">
         — WOVEN IN GOLD, DRAPED IN HERITAGE —
@@ -27,7 +27,7 @@ export default function Footer() {
       <div className="relative z-10 w-24 h-[1px] bg-gradient-to-r from-transparent via-[#a8874e] to-transparent mb-8"></div>
 
       <p className="relative z-10 font-label text-[10px] tracking-[0.3em] text-[#fbf4f1]/40 uppercase">
-        © {new Date().getFullYear()} HIRANYAM. ALL RIGHTS RESERVED.
+        © {new Date().getFullYear()} HIRAṆYAM. ALL RIGHTS RESERVED.
       </p>
     </footer>
   );

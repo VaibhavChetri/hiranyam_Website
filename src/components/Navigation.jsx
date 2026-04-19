@@ -38,8 +38,8 @@ export default function Navigation() {
           {/* Mobile Layout (Visible < md) */}
           <div className="flex md:hidden items-center justify-between w-full">
             <Link to="/" className="flex items-center gap-2.5">
-              <img src="/logo.jpeg" alt="Hiranyam lotus" className="h-9 w-auto drop-shadow-[0_2px_4px_rgba(61,31,42,0.12)]" />
-              <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRANYAM</span>
+              <img src="/logo.png" alt="Hiranyam lotus" className="h-9 w-auto drop-shadow-[0_2px_4px_rgba(61,31,42,0.12)]" />
+              <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRAṆYAM</span>
             </Link>
 
             <div className="flex items-center gap-8">
@@ -60,9 +60,9 @@ export default function Navigation() {
           <div className="hidden md:flex items-center justify-between w-full">
             <div className="flex items-center gap-12">
               <Link to="/" className="flex items-center gap-3 group">
-                <img src="/logo.jpeg" alt="Hiranyam lotus" className="h-12 w-auto drop-shadow-[0_2px_6px_rgba(61,31,42,0.14)] transition-transform duration-500 group-hover:scale-105" />
+                <img src="/logo.png" alt="Hiranyam lotus" className="h-12 w-auto drop-shadow-[0_2px_6px_rgba(61,31,42,0.14)] transition-transform duration-500 group-hover:scale-105" />
                 <span className="relative font-['Cinzel'] text-2xl tracking-[0.28em] font-light text-[#3d1f2a]">
-                  HIRANYAM
+                  HIRAṆYAM
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-transparent via-[#a8874e] to-transparent group-hover:w-full transition-all duration-500"></span>
                 </span>
               </Link>
@@ -115,14 +115,14 @@ export default function Navigation() {
                 <X size={28} strokeWidth={1} />
               </button>
               <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <img src="/logo.jpeg" alt="Hiranyam lotus" className="h-8 w-auto" />
-                <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRANYAM</span>
+                <img src="/logo.png" alt="Hiranyam lotus" className="h-8 w-auto" />
+                <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRAṆYAM</span>
               </div>
             </div>
 
             <div className="flex flex-col items-center justify-center flex-grow gap-10">
               <motion.img
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="Hiranyam lotus"
                 className="w-44 h-auto mb-4 drop-shadow-[0_8px_30px_rgba(210,154,158,0.35)]"
                 initial={{ opacity: 0, scale: 0.85, y: 10 }}
@@ -148,7 +148,7 @@ export default function Navigation() {
             </div>
 
             <div className="mt-8 mb-4 text-center font-label text-[9px] tracking-[0.3em] text-[#3d1f2a]/40 uppercase">
-              © 2024 HIRANYAM. All Rights Reserved.
+              © 2024 HIRAṆYAM. All Rights Reserved.
             </div>
           </motion.div>
         )}
