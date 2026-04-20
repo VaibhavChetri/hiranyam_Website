@@ -4,20 +4,14 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <header className="relative min-h-screen flex flex-col justify-center px-8 pt-20 overflow-hidden regal-gradient">
+      <header className="relative min-h-screen flex flex-col justify-center px-8 pt-32 md:pt-40 overflow-hidden regal-gradient">
         {/* Ornamental framing corners (gold) */}
-        <div className="pointer-events-none absolute top-28 left-6 md:left-10 w-16 h-16 border-t border-l border-[#a8874e]/40"></div>
-        <div className="pointer-events-none absolute top-28 right-6 md:right-10 w-16 h-16 border-t border-r border-[#a8874e]/40"></div>
+        <div className="pointer-events-none absolute top-40 md:top-48 left-6 md:left-10 w-16 h-16 border-t border-l border-[#a8874e]/40"></div>
+        <div className="pointer-events-none absolute top-40 md:top-48 right-6 md:right-10 w-16 h-16 border-t border-r border-[#a8874e]/40"></div>
 
         <div className="grid grid-cols-12 gap-8 items-center h-full max-w-screen-2xl mx-auto w-full">
           <div className="col-span-12 md:col-span-7 z-10">
-            <div className="flex items-center gap-5 mb-8">
-              <img src="/logo.png" alt="Hiranyam lotus" className="h-20 md:h-24 w-auto drop-shadow-[0_10px_30px_rgba(210,154,158,0.3)]" />
-              <div className="flex flex-col">
-                <span className="font-label text-[10px] tracking-[0.45em] uppercase text-secondary">Est. MCMXCII</span>
-                <span className="font-display italic text-lg text-primary/70">House of Heirloom Silks</span>
-              </div>
-            </div>
+
             <h1 className="font-display italic font-light text-6xl md:text-9xl leading-[1.05] text-primary mb-8 max-w-2xl">
               A Legacy <br/> <span className="pl-24 gold-shimmer">Reborn in Rose</span>
             </h1>

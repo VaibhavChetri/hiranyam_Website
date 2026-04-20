@@ -37,9 +37,12 @@ export default function Navigation() {
 
           {/* Mobile Layout (Visible < md) */}
           <div className="flex md:hidden items-center justify-between w-full">
-            <Link to="/" className="flex items-center gap-2.5">
-              <img src="/logo.png" alt="Hiranyam lotus" className="h-9 w-auto drop-shadow-[0_2px_4px_rgba(61,31,42,0.12)]" />
-              <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRAṆYAM</span>
+            <Link to="/" className="flex items-center">
+              <img 
+                src="/logo.png" 
+                alt="Hiranyam lotus" 
+                className={`w-auto transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] filter drop-shadow-[0_4px_12px_rgba(61,31,42,0.1)] ${scrolled ? 'h-16' : 'h-24'}`} 
+              />
             </Link>
 
             <div className="flex items-center gap-8">
@@ -59,12 +62,14 @@ export default function Navigation() {
           {/* Desktop Layout (Visible >= md) */}
           <div className="hidden md:flex items-center justify-between w-full">
             <div className="flex items-center gap-12">
-              <Link to="/" className="flex items-center gap-3 group">
-                <img src="/logo.png" alt="Hiranyam lotus" className="h-12 w-auto drop-shadow-[0_2px_6px_rgba(61,31,42,0.14)] transition-transform duration-500 group-hover:scale-105" />
-                <span className="relative font-['Cinzel'] text-2xl tracking-[0.28em] font-light text-[#3d1f2a]">
-                  HIRAṆYAM
-                  <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-transparent via-[#a8874e] to-transparent group-hover:w-full transition-all duration-500"></span>
-                </span>
+              <Link to="/" className="flex items-center group relative">
+                {/* Elegant glow effect behind the logo on hover */}
+                <div className="absolute inset-0 bg-[#a8874e]/10 blur-2xl rounded-full scale-75 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <img 
+                  src="/logo.png" 
+                  alt="Hiranyam lotus" 
+                  className={`w-auto relative z-10 filter drop-shadow-[0_4px_16px_rgba(61,31,42,0.12)] transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] group-hover:drop-shadow-[0_8px_30px_rgba(168,135,78,0.25)] ${scrolled ? 'h-20' : 'h-[120px]'}`} 
+                />
               </Link>
               <div className="hidden md:flex gap-8 font-['Cinzel'] tracking-[0.18em] uppercase text-xs">
                 {navLinks.map((link) => {
@@ -114,9 +119,8 @@ export default function Navigation() {
               >
                 <X size={28} strokeWidth={1} />
               </button>
-              <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <img src="/logo.png" alt="Hiranyam lotus" className="h-8 w-auto" />
-                <span className="font-['Cinzel'] text-lg tracking-[0.28em] font-light text-[#3d1f2a]">HIRAṆYAM</span>
+              <div className="absolute left-1/2 -translate-x-1/2 flex items-center">
+                <img src="/logo.png" alt="Hiranyam lotus" className="h-12 w-auto" />
               </div>
             </div>
 
@@ -124,7 +128,7 @@ export default function Navigation() {
               <motion.img
                 src="/logo.png"
                 alt="Hiranyam lotus"
-                className="w-44 h-auto mb-4 drop-shadow-[0_8px_30px_rgba(210,154,158,0.35)]"
+                className="w-56 h-auto mb-4 drop-shadow-[0_8px_30px_rgba(210,154,158,0.35)]"
                 initial={{ opacity: 0, scale: 0.85, y: 10 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
