@@ -5,17 +5,15 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <header className="relative min-h-screen flex flex-col justify-center px-8 pt-32 md:pt-40 overflow-hidden regal-gradient">
-        {/* Ornamental framing corners (gold) */}
-        <div className="pointer-events-none absolute top-40 md:top-48 left-6 md:left-10 w-16 h-16 border-t border-l border-[#a8874e]/40"></div>
-        <div className="pointer-events-none absolute top-40 md:top-48 right-6 md:right-10 w-16 h-16 border-t border-r border-[#a8874e]/40"></div>
+        {/* Ornamental framing corners (gold) - Removed as requested */}
 
         <div className="grid grid-cols-12 gap-8 items-center h-full max-w-screen-2xl mx-auto w-full">
           <div className="col-span-12 md:col-span-7 z-10">
 
-            <h1 className="font-display italic font-light text-6xl md:text-9xl leading-[1.05] text-primary mb-8 max-w-2xl">
-              A Legacy <br/> <span className="pl-24 gold-shimmer">Reborn in Rose</span>
+            <h1 className="font-display italic font-light text-5xl md:text-7xl lg:text-9xl leading-[1.05] text-primary mb-8 max-w-2xl">
+              A Legacy <br/> <span className="pl-8 md:pl-24 gold-shimmer inline-block">Reborn in Rose</span>
             </h1>
-            <p className="font-display italic text-lg md:text-xl text-primary/60 max-w-xl mb-10 leading-relaxed">
+            <p className="font-display italic text-base md:text-xl text-primary/60 max-w-xl mb-10 leading-relaxed">
               Where petals of heritage unfold into heirlooms &mdash; woven in blush, gilded in gold.
             </p>
             <div className="flex items-center gap-12 mt-12">

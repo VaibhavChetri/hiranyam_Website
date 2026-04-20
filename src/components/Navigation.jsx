@@ -41,7 +41,7 @@ export default function Navigation() {
               <img 
                 src="/logo.png" 
                 alt="Hiranyam lotus" 
-                className={`w-auto transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] filter drop-shadow-[0_4px_12px_rgba(61,31,42,0.1)] ${scrolled ? 'h-16' : 'h-24 -mt-2'}`} 
+                className={`w-auto transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] filter drop-shadow-[0_4px_12px_rgba(61,31,42,0.1)] ${scrolled ? 'h-12' : 'h-16'}`} 
               />
             </Link>
 
