@@ -41,7 +41,7 @@ export default function Navigation() {
               <img 
                 src="/logo.png" 
                 alt="Hiranyam lotus" 
-                className={`w-auto transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] filter drop-shadow-[0_4px_12px_rgba(61,31,42,0.1)] ${scrolled ? 'h-16' : 'h-24'}`} 
+                className={`w-auto transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] filter drop-shadow-[0_4px_12px_rgba(61,31,42,0.1)] ${scrolled ? 'h-16' : 'h-24 -mt-2'}`} 
               />
             </Link>
 
@@ -68,7 +68,7 @@ export default function Navigation() {
                 <img 
                   src="/logo.png" 
                   alt="Hiranyam lotus" 
-                  className={`w-auto relative z-10 filter drop-shadow-[0_4px_16px_rgba(61,31,42,0.12)] transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] group-hover:drop-shadow-[0_8px_30px_rgba(168,135,78,0.25)] ${scrolled ? 'h-20' : 'h-[120px]'}`} 
+                  className={`w-auto relative z-10 filter drop-shadow-[0_4px_16px_rgba(61,31,42,0.12)] transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.03] group-hover:drop-shadow-[0_8px_30px_rgba(168,135,78,0.25)] ${scrolled ? 'h-20' : 'h-[120px] -mt-6'}`} 
                 />
               </Link>
               <div className="hidden md:flex gap-8 font-['Cinzel'] tracking-[0.18em] uppercase text-xs">
